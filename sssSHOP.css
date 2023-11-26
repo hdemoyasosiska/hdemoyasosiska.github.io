@@ -474,14 +474,7 @@ footer {
           justify-content: space-between;
   margin-bottom: 20px;
 }
-.popup__product-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+
 .popup__product-image {
   width: 100px;
   height: 100px;
@@ -678,7 +671,13 @@ footer {
   }
 }
 
+@media (max-width: 600) {
+  .popup__product-wrap{
+    display: flex;
+    flex-direction: column;
+  }
 
+}
 
 h3 {color: rgb(1, 192, 192);}
 
